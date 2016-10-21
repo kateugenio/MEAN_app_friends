@@ -1,0 +1,27 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<button type="button" class="btn btn-primary btn-lg" id="createFriendBtn"><a href="#/new">Create Friend</a></button>
+			<input type="text" ng-model="filter" placeholder="filter" id="filter" class="form-control input-lg">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Show</th>
+						<th>Update</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat='friend in friends | filter:filter'>
+						<td>{{friend.firstName}} {{friend.lastName}}</td>
+						<td><button type="button" class="btn btn-default"><a href="#/show/{{friend._id}}">Show</a></button></td>
+						<td><button type="button" class="btn btn-default"><a href="#/edit/{{friend._id}}">Edit</a></button></td>
+						<td><button type="button" class="btn btn-danger" ng-click="deleteFriend(friend._id)">Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+	

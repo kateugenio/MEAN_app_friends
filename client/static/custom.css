@@ -1,0 +1,38 @@
+#filter {
+	float: left;
+	display: inline-block;
+	width: 300px;
+}
+#createFriendBtn {
+	float: right;
+	display: inline-block;
+}
+#createFriendBtn a {
+	color: white;
+	text-decoration: none;
+}
+#show {
+	text-align: center;
+}
+#backBtn {
+	margin-top: 20px;
+}
+#backBtn a {
+	color: white;
+	text-decoration: none;
+}
+#cancelBtn {
+	float: right;
+}
+#cancelBtn a {
+	text-decoration: none;
+}
+.btn a {
+	text-decoration: none;
+}
+.list-group-item {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
